@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family:"proute" ;
+  src: url(../font/Eraser.ttf);
+}
+
+body{
+  background-image:url(../image/images1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#resultat{
+   width:500px;
+   height:550px;
+   margin:auto;
+  color:white;
+   text-align: center;
+   font-size: 2em;
+   background-color:rgba(91, 90, 93, 0.35);
+   font-family:proute;
+
+}
+input{
+  text-align: center;
+}
+#gras:hover{
+  color:blue!important;
+}
+#minuscule:hover{
+  transform: scale(1.0);
+  -moz-transform: scale(24.5);
+  -webkit-transform: scale(24.5);
+  -o-transform: scale(24.5);
+  -ms-transform: scale(24.5);
+  /* IE 9 */
+  /*-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')";
+  /* IE8 */
+  /*filter: progid: DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
+  /* IE6 and 7 */
+}
+#majuscule{
+animation:rota 15s infinite linear;
+}
+@keyframes rota{
+  0%{
+    transform:rotate(0deg);
+    transform-origin left;
+  }
+  100%{
+    transform: rotate(360deg);
+    transform-origin left;
+  }
+}
+#voyelle{
+  animation: boule2 5s infinite ;
+}
+#inverser{
+animation: couleur1 20s linear infinite;
+}
+  @keyframes couleur1{
+  5%{ transform:scale(1.1);
+    color: red;
+  }
+    50%{ transform:scale(1.1);
+    color: black;
+    }
+    50%{ transform:scale(1.1);
+      color: green;
+    }
+}
+@keyframes boule2 {
+    0% {margin-left:0;}/*va et vien*/
+50% {margin-left:300px;}
+100%{margin-right:600px;}
+}
